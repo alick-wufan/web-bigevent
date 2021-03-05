@@ -1,0 +1,11 @@
+# 苹果自带的bug
+
+*/.DS_Store
+.DS_Store
+# 忽略 index.css
+index.css
+# 忽略 test 目录下所有的文件
+test/
+
+*.idea
+*.DS_Store
