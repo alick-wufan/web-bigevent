@@ -19,9 +19,9 @@ $.ajaxPrefilter(function(options) {
         //无论成功还是失败 最终都会调用complete函数
 
         // console.log('执行了complete回调');
-        console.log(res);
+        // console.log(res);
         //在complete回调中可以使用responseJSON拿到服务器响应回来的数据
-        if (res.responseJSON.status === 1 && res.responseJSON.message == '身份认证失败!') {
+        if (res.responseJSON.status === 1 && res.responseJSON.message == "身份认证失败！") {
             //获取用户信息失败
             localStorage.removeItem('token');
             location.href = '/login.html'
